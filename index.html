@@ -35,6 +35,7 @@
               clifford: "#da373d",
               "heading-black": "#1C1C1C",
               "paragraph-gray": "#777",
+              "light-gray": "#F4F4F4",
             },
           },
         },
@@ -91,6 +92,7 @@
         </div>
       </div>
     </header>
+
     <main class="container px-4 mx-auto">
       <!-- feature section -->
       <section class="feature py-16">
@@ -150,22 +152,29 @@
         </div>
       </section>
       <!-- freshly section -->
-      <div class="freshly-images flex flex-col justify-between gap-12 py-16 lg:flex-row">
+      <div
+        class="freshly-images flex flex-col justify-between gap-12 py-16 lg:flex-row"
+      >
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:w-1/2 gap-7">
+          <div
+            class="rounded-lg h-36 opacity-10 bg-gradient-to-r from-[#F00] to-[#FF8938]"
+          ></div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2  lg:w-1/2 gap-7 ">
-          
-          <div class="rounded-lg h-36 opacity-10 bg-gradient-to-r from-[#F00] to-[#FF8938]"></div>
-
-          <div class="rounded-lg row-span-2 flex justify-center items-center bg-[#e6a6231A]">
+          <div
+            class="rounded-lg row-span-2 flex justify-center items-center bg-[#e6a6231A]"
+          >
             <img class="w-36" src="images/fresh-1.png" alt="" />
           </div>
 
-          <div class="rounded-lg row-span-2 flex items-center justify-center bg-[#5776391A]">
+          <div
+            class="rounded-lg row-span-2 flex items-center justify-center bg-[#5776391A]"
+          >
             <img class="w-28" src="images/fresh-2.png" alt="" />
           </div>
 
           <div
-          class="rounded-lg h-36 opacity-10 bg-gradient-to-r from-[#F00] to-[#FF8938]"></div>
+            class="rounded-lg h-36 opacity-10 bg-gradient-to-r from-[#F00] to-[#FF8938]"
+          ></div>
         </div>
 
         <div class="fresly-content">
@@ -203,8 +212,58 @@
         </div>
       </div>
       <!-- super client section -->
-      <section class="clients py-16 ">
+      <section
+        class="clients gap-12 p-10 flex flex-col  items-center justify-between bg-gradient-to-r from-[#FF8938] to-[#F00] rounded-xl lg:flex-row lg:p-20 "
+      >
+        <header class="max-w-[440px] lg:w-1/2 space-y-5">
+          <h1 class="text-light-gray font-extrabold text-5xl">
+            Meet Our Super Clients
+          </h1>
+          <p class="text-light-gray font-medium text-base">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly
+            believable.
+          </p>
+          <button class="btn btn-outline text-xl font-bold text-orange-600 border-1 border-white bg-white">Show All</button>
+        </header>
 
+        <div class="client-reviews relative space-y-10">
+            <!-- review card next -->
+            <div class="review-card lg:opacity-30 relative p-10 rounded-lg bg-white lg:w-[433px] text-base">
+              <p class="paragraph-gray font-normal mb-5">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
+              <h3 class="text-heading-black font-bold">Ilham Yuda</h3>
+              <p class="text-[#5D5A6F] font-medium">Businessman</p>
+              <div class="flex justify-end">
+                <img src="images/circles.png" alt="">
+              </div>
+              <img class="absolute w-14 -top-5 -left-5" src="images/client.png" alt="">
+            </div>
+            <!-- review card current -->
+            <div class="lg:absolute top-32 z-10 -left-32">
+              <div class="review-card relative  p-10 rounded-lg bg-white lg:w-[433px] text-base ">
+                <p class="paragraph-gray font-normal mb-5">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
+                <h3 class="text-heading-black font-bold">Ilham Yuda</h3>
+                <p class="text-[#5D5A6F] font-medium">Businessman</p>
+                <div class="flex justify-end">
+                  <img src="images/circles.png" alt="">
+                </div>
+                <img class="absolute w-14 -top-5 -left-5" src="images/client.png" alt="">
+              </div>
+            </div>
+
+            <!-- review card previous -->
+            <div class="review-card lg:opacity-30 relative p-10 rounded-lg bg-white lg:w-[433px] text-base">
+              <p class="paragraph-gray font-normal mb-5">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
+              <h3 class="text-heading-black font-bold">Ilham Yuda</h3>
+              <p class="text-[#5D5A6F] font-medium">Businessman</p>
+              <div class="flex justify-end">
+                <img src="images/circles.png" alt="">
+              </div>
+              <img class="absolute w-14 -top-5 -left-5" src="images/client.png" alt="">
+            </div>
+        </div>
+        
       </section>
     </main>
     <footer></footer>
